@@ -1,12 +1,14 @@
-// src/app/page.js
+// src/app/page.tsx
 import "./globals.css";
 import Dashboard from "@/components/dashboard";
-import Login from "@/components/login";
 
-export default function Home() {
+import { JSX } from "react";
+
+export default function Home(): JSX.Element {
   return (
     <main className="flex">
-      <Login />
+      <Dashboard />
+      
     </main>
   );
 }
